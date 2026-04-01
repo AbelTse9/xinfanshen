@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳欣翻身工程灯具公司 - 31年专注综合建材一站式批发</title>
+    <meta name="description" content="深圳欣翻身工程灯具公司，31年专注综合建材一站式批发，代理斯灯堡灯具、飞利浦、木林森等知名品牌，为装饰公司提供多快好省优的服务">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #3182ce;
+            --light-color: #f7fafc;
+            --dark-color: #2d3748;
+            --text-color: #4a5568;
+            --success-color: #38a169;
+            --warning-color: #ed8936;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .contact-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        /* 英雄区域 */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20indoor%20lighting%20fixture%20in%20luxury%20building%20with%20warm%20lighting%20effect&image_size=landscape_16_9');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0;
+            position: relative;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        /* 关于我们 */
+        .about {
+            padding: 6rem 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.125rem;
+            color: var(--text-color);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            background-color: var(--accent-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .feature-text h4 {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 产品与服务 */
+        .products {
+            padding: 6rem 0;
+            background-color: var(--light-color);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .product-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .product-features li i {
+            color: var(--success-color);
+        }
+
+        /* 品牌代理 */
+        .brands {
+            padding: 6rem 0;
+            background-color: white;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .brand-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background-color: var(--light-color);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .brand-item:hover {
+            transform: scale(1.05);
+            box-shadow: var(--box-shadow);
+        }
+
+        .brand-item i {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .brand-item span {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* 优势 */
+        .advantages {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .advantage-item {
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .advantage-item:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .advantage-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .advantage-item h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* 客户案例 */
+        .cases {
+            padding: 6rem 0;
+            background-color: var(--light-color);
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .case-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .case-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .case-card:hover .case-image img {
+            transform: scale(1.05);
+        }
+
+        .case-content {
+            padding: 1.5rem;
+        }
+
+        .case-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .case-content p {
+            margin-bottom: 1rem;
+        }
+
+        .case-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #718096;
+        }
+
+        /* 联系我们 */
+        .contact {
+            padding: 6rem 0;
+            background-color: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            background-color: var(--accent-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-text h4 {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-form {
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .contact-form h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            text-align: center;
+            opacity: 0.6;
+            font-size: 0.875rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                box-shadow: var(--box-shadow);
+                padding: 1rem 0;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 4rem 0;
+            }
+
+            .about,
+            .products,
+            .brands,
+            .advantages,
+            .cases,
+            .contact {
+                padding: 4rem 0;
+            }
+        }
+
+        /* 动画效果 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* 滚动效果 */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-lightbulb"></i>
+                    深圳欣翻身工程灯具
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#products">产品服务</a></li>
+                    <li><a href="#brands">品牌代理</a></li>
+                    <li><a href="#cases">客户案例</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+                <a href="#contact" class="contact-btn">免费咨询</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>31年专注综合建材一站式批发</h1>
+                <p>深圳欣翻身工程灯具公司，由洪楚辉创办，专注于为装饰公司提供多、快、好、省、优的综合建材服务，代理多个国际知名品牌，覆盖水电管材、木板龙骨、油漆、洁具卫浴等全品类。</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">立即咨询</a>
+                    <a href="#products" class="btn btn-secondary">了解产品</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>关于我们</h2>
+                <p>31年行业经验，打造综合建材一站式批发平台</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <h3>公司简介</h3>
+                    <p>深圳欣翻身工程灯具公司由洪楚辉先生创办，旗下辉旺建材专注综合建材一站式批发31年，是行业内知名的建材供应商。我们致力于为装饰公司提供全方位的建材解决方案，通过整合优质资源，为客户创造更大价值。</p>
+                    <p>公司拥有专业的团队和完善的供应链体系，确保产品质量和供货速度，为客户提供多、快、好、省、优的服务体验。</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>多</h4>
+                                <p>产品品类齐全，覆盖全系列建材</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>快</h4>
+                                <p>供货速度快，确保工程进度</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>好</h4>
+                                <p>产品质量好，知名品牌代理</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>省</h4>
+                                <p>价格优惠，降低采购成本</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20building%20materials%20warehouse%20with%20lighting%20products%20and%20construction%20supplies&image_size=landscape_16_9" alt="公司仓库">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品与服务 -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>产品与服务</h2>
+                <p>全方位建材解决方案，满足不同工程需求</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20indoor%20wall%20light%20fixture%20with%20warm%20lighting%20in%20luxury%20building&image_size=landscape_4_3" alt="灯具系列">
+                    </div>
+                    <div class="product-content">
+                        <h3>灯具系列</h3>
+                        <p>代理斯灯堡灯具、飞利浦、木林森等知名品牌，提供工程照明、商业照明、家居照明等全系列产品。</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> 工程照明解决方案</li>
+                            <li><i class="fas fa-check-circle"></i> 商业空间照明设计</li>
+                            <li><i class="fas fa-check-circle"></i> 节能照明产品</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=outdoor%20landscape%20lighting%20with%20LED%20path%20lights&image_size=landscape_4_3" alt="综合布线">
+                    </div>
+                    <div class="product-content">
+                        <h3>综合布线</h3>
+                        <p>赖工综合布线代理，提供高质量的网络布线、安防布线等解决方案，确保工程通信系统稳定可靠。</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> 网络布线系统</li>
+                            <li><i class="fas fa-check-circle"></i> 安防监控布线</li>
+                            <li><i class="fas fa-check-circle"></i> 智能建筑布线</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20bathroom%20fixtures%20with%20chrome%20finish&image_size=landscape_4_3" alt="卫浴洁具">
+                    </div>
+                    <div class="product-content">
+                        <h3>卫浴洁具</h3>
+                        <p>九牧卫浴代理，提供高品质的卫生洁具、浴室五金等产品，满足现代建筑的卫浴需求。</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> 卫生洁具系列</li>
+                            <li><i class="fas fa-check-circle"></i> 浴室五金配件</li>
+                            <li><i class="fas fa-check-circle"></i> 智能卫浴产品</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=interior%20walls%20being%20painted%20with%20high%20quality%20paint&image_size=landscape_4_3" alt="油漆涂料">
+                    </div>
+                    <div class="product-content">
+                        <h3>油漆涂料</h3>
+                        <p>立邦油漆代理，提供环保、高品质的油漆涂料产品，满足不同空间的装修需求。</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> 内墙涂料系列</li>
+                            <li><i class="fas fa-check-circle"></i> 外墙涂料系列</li>
+                            <li><i class="fas fa-check-circle"></i> 木器漆系列</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20pipes%20and%20electrical%20conduits%20in%20building%20construction&image_size=landscape_4_3" alt="水电管材">
+                    </div>
+                    <div class="product-content">
+                        <h3>水电管材</h3>
+                        <p>提供优质的水电管材产品，包括给水管、排水管、电线套管等，确保工程水电系统安全可靠。</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> 给水管道系统</li>
+                            <li><i class="fas fa-check-circle"></i> 排水管道系统</li>
+                            <li><i class="fas fa-check-circle"></i> 电线套管系列</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=wooden%20planks%20and%20ceiling%20joists%20in%20construction&image_size=landscape_4_3" alt="木板龙骨">
+                    </div>
+                    <div class="product-content">
+                        <h3>木板龙骨</h3>
+                        <p>提供高品质的木板、龙骨等产品，用于室内装修的基层结构，确保装修质量和稳定性。</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> 实木板材系列</li>
+                            <li><i class="fas fa-check-circle"></i> 人造板材系列</li>
+                            <li><i class="fas fa-check-circle"></i> 吊顶龙骨系统</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌代理 -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>品牌代理</h2>
+                <p>与知名品牌合作，确保产品质量和服务</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-item scroll-reveal">
+                    <span>斯灯堡灯具</span>
+                </div>
+                <div class="brand-item scroll-reveal">
+                    <span>飞利浦</span>
+                </div>
+                <div class="brand-item scroll-reveal">
+                    <span>木林森</span>
+                </div>
+                <div class="brand-item scroll-reveal">
+                    <span>赖工综合布线</span>
+                </div>
+                <div class="brand-item scroll-reveal">
+                    <span>九牧卫浴</span>
+                </div>
+                <div class="brand-item scroll-reveal">
+                    <span>立邦油漆</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势 -->
+    <section class="advantages">
+        <div class="container">
+            <div class="section-title scroll-reveal" style="color: white;">
+                <h2>我们的优势</h2>
+                <p>为装饰公司创造多、快、好、省、优的服务体验</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item scroll-reveal">
+                    <div class="advantage-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>多</h3>
+                    <p>产品品类齐全，覆盖水电管材、木板龙骨、油漆、洁具卫浴等全品类建材，满足一站式采购需求。</p>
+                </div>
+                <div class="advantage-item scroll-reveal">
+                    <div class="advantage-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>快</h3>
+                    <p>高效的供应链体系，快速响应客户需求，确保工程进度不受影响，提高施工效率。</p>
+                </div>
+                <div class="advantage-item scroll-reveal">
+                    <div class="advantage-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>好</h3>
+                    <p>代理国际知名品牌，产品质量有保障，为客户提供高品质的建材产品和专业的技术支持。</p>
+                </div>
+                <div class="advantage-item scroll-reveal">
+                    <div class="advantage-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>省</h3>
+                    <p>直接从厂家进货，减少中间环节，为客户提供更优惠的价格，降低采购成本。</p>
+                </div>
+                <div class="advantage-item scroll-reveal">
+                    <div class="advantage-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>优</h3>
+                    <p>专业的服务团队，提供一对一的咨询服务，为客户量身定制建材解决方案。</p>
+                </div>
+                <div class="advantage-item scroll-reveal">
+                    <div class="advantage-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>31年经验</h3>
+                    <p>31年行业经验，深刻理解客户需求，为客户提供更专业、更贴心的服务。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例 -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>客户案例</h2>
+                <p>成功为众多装饰公司提供建材解决方案</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card scroll-reveal">
+                    <div class="case-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=luxury%20commercial%20office%20building%20lobby%20with%20modern%20lighting%20fixtures&image_size=landscape_4_3" alt="商业办公楼项目">
+                    </div>
+                    <div class="case-content">
+                        <h3>商业办公楼项目</h3>
+                        <p>为某大型商业办公楼提供全套照明、布线、卫浴等建材产品，确保项目按时交付，获得客户高度认可。</p>
+                        <div class="case-meta">
+                            <span>项目规模：10000㎡</span>
+                            <span>完成时间：2025年</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card scroll-reveal">
+                    <div class="case-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=luxury%20residential%20home%20with%20outdoor%20landscape%20lighting&image_size=landscape_4_3" alt="高端住宅项目">
+                    </div>
+                    <div class="case-content">
+                        <h3>高端住宅项目</h3>
+                        <p>为高端住宅项目提供优质的木材、油漆、卫浴等产品，打造舒适美观的居住环境。</p>
+                        <div class="case-meta">
+                            <span>项目规模：5000㎡</span>
+                            <span>完成时间：2025年</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card scroll-reveal">
+                    <div class="case-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20commercial%20complex%20with%20architectural%20lighting&image_size=landscape_4_3" alt="商业综合体项目">
+                    </div>
+                    <div class="case-content">
+                        <h3>商业综合体项目</h3>
+                        <p>为商业综合体提供全方位的建材解决方案，包括照明、布线、水电等系统，确保项目顺利进行。</p>
+                        <div class="case-meta">
+                            <span>项目规模：20000㎡</span>
+                            <span>完成时间：2024年</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>联系我们</h2>
+                <p>立即咨询，获取专业的建材解决方案</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info scroll-reveal">
+                    <h3>联系方式</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>公司地址</h4>
+                            <p>深圳市宝安区建材市场123号</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>联系电话</h4>
+                            <p>0755-12345678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>电子邮箱</h4>
+                            <p>info@xinfanshen.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>营业时间</h4>
+                            <p>周一至周五：9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form scroll-reveal">
+                    <h3>免费咨询</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">电话</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">咨询内容</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">提交咨询</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>深圳欣翻身工程灯具公司</h3>
+                    <p>31年专注综合建材一站式批发，为装饰公司提供多、快、好、省、优的服务。</p>
+                    <p>代理多个国际知名品牌，覆盖水电管材、木板龙骨、油漆、洁具卫浴等全品类。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>产品服务</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">灯具系列</a></li>
+                        <li><a href="#">综合布线</a></li>
+                        <li><a href="#">卫浴洁具</a></li>
+                        <li><a href="#">油漆涂料</a></li>
+                        <li><a href="#">水电管材</a></li>
+                        <li><a href="#">木板龙骨</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>品牌代理</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">斯灯堡灯具</a></li>
+                        <li><a href="#">飞利浦</a></li>
+                        <li><a href="#">木林森</a></li>
+                        <li><a href="#">赖工综合布线</a></li>
+                        <li><a href="#">九牧卫浴</a></li>
+                        <li><a href="#">立邦油漆</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">公司地址：深圳市宝安区建材市场123号</a></li>
+                        <li><a href="#">联系电话：0755-12345678</a></li>
+                        <li><a href="#">电子邮箱：info@xinfanshen.com</a></li>
+                        <li><a href="#">营业时间：周一至周五 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 深圳欣翻身工程灯具公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // 滚动效果
+        function handleScroll() {
+            const elements = document.querySelectorAll('.scroll-reveal');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleScroll);
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // 关闭移动端菜单
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // 表单提交处理
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 这里可以添加表单提交逻辑
+            alert('咨询提交成功，我们将尽快与您联系！');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
